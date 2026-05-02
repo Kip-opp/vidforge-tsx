@@ -1,21 +1,29 @@
-# VidForge (Vite + React + TypeScript)
+# VidForge
 
-VidForge is a modern React app for exploring AI video generation tools. It includes:
+VidForge is a modern web application for discovering and exploring AI video generation tools. Built with Vite, React, and TypeScript, it provides a polished interface for browsing tools by category, reviewing model details, and exploring future trends in AI video creation.
 
-- Search and category filtering
-- Interactive model and category modals
-- Styled sections for Hero, Categories, Models, and Future Predictions
-- Tailwind-powered design system with reusable UI utilities/components
-- Aurora animated background section integrated into the app
+## Overview
+
+The application is designed to make AI video tooling easier to navigate through searchable content, category-based filtering, and structured UI sections. It also includes interactive modal experiences and a reusable component-driven design system for maintainability and scale.
+
+## Features
+
+- Search AI video generation tools quickly and efficiently
+- Filter tools by category for easier discovery
+- Explore model details through interactive modals
+- Browse category information in dedicated modal views
+- View curated sections for Hero, Categories, Models, and Future Predictions
+- Use a reusable Tailwind-based UI system across the application
+- Experience an animated Aurora background integrated into the interface
 
 ## Tech Stack
 
-- **Vite**
-- **React 18**
-- **TypeScript**
-- **Tailwind CSS**
-- **Zustand** (state management)
-- **Lucide React** (icons)
+- **Vite** for fast development and build tooling
+- **React 18** for component-based UI development
+- **TypeScript** for static typing and maintainable code
+- **Tailwind CSS** for utility-first styling
+- **Zustand** for lightweight state management
+- **Lucide React** for iconography
 
 ## Project Structure
 
@@ -41,46 +49,56 @@ src/
 
 ## Getting Started
 
-Install dependencies:
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js
+- npm
+
+### Installation
+
+Install project dependencies:
 
 ```bash
 npm install
 ```
 
-Run development server:
+### Development
+
+Start the local development server:
 
 ```bash
 npm run dev
 ```
 
-Build for production:
 
-```bash
-npm run build
-```
+## Styling and UI
 
-Preview production build:
+VidForge uses Tailwind CSS as the foundation of its design system, with reusable utilities and UI components to keep styling consistent across the application. Global styles, theme tokens, and CSS variables are defined in `src/index.css`.
 
-```bash
-npm run preview
-```
+Key UI-related files:
 
-## Styling & UI Notes
+- `src/components/ui/aurora-background.tsx`
+- `src/components/ui/glowing-effect.tsx`
+- `src/components/demo.tsx`
 
-- Tailwind configuration is in `tailwind.config.js`.
-- Global styles and CSS variables are in `src/index.css`.
-- Utility helper `cn()` is defined in `src/lib/utils.ts`.
-- Reusable UI components are kept under `src/components/ui`.
-- Aurora UI files:
-  - `src/components/ui/aurora-background.tsx`
-  - `src/components/demo.tsx` (exports `AuroraBackgroundDemo`)
-- Aurora animation support is configured in Tailwind (`aurora` keyframes + `animate-aurora`).
+Aurora animation support is configured through Tailwind using custom keyframes and the `animate-aurora` utility.
 
-## Data and State
+## Data and State Management
 
-- App data source: `src/data/mockData.ts`
-- Centralized app store: `src/store/useAppStore.ts`
+Application data is currently sourced from `src/data/mockData.ts`, making it straightforward to iterate quickly during development. Global application state is managed with Zustand in `src/store/useAppStore.ts`.
 
-## Additional Docs
+## Utilities
 
-- `SPEC.md` contains product/specification notes for the project.
+Shared helper functions are located in `src/lib/utils.ts`. This includes utilities such as `cn()` for composing conditional class names cleanly across components.
+
+## Documentation
+
+Additional product and specification notes are available in:
+
+- `SPEC.md`
+
+## Development Notes
+
+The project follows a modular React structure intended to support reuse, scalability, and easier maintenance. The current setup is well-suited for extending the platform with live APIs, richer filtering, authentication, or personalized recommendation features.
