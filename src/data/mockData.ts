@@ -198,7 +198,7 @@ export const aiVideoModels: AIVideoModel[] = [
     pricingTier: 'freemium',
     categories: ['video-to-video', 'animation'],
     features: ['Style transfer', 'Real-time preview', 'Multiple effects', 'Easy to use'],
-    imageUrl: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1699152865316-a5778d3914a1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     exampleOutputs: ['https://images.unsplash.com/photo-1504609773096-104ff10cf639?w=400'],
     stats: { maxDuration: '30 seconds', resolution: '1920x1080', rating: 4.2, launchYear: 2024 }
   },
@@ -240,7 +240,7 @@ export const aiVideoModels: AIVideoModel[] = [
     pricingTier: 'free',
     categories: ['text-to-video'],
     features: ['Open source', 'Customizable', 'Self-hosted', 'Stable diffusion based'],
-    imageUrl: 'https://images.unsplash.com/photo-1487254405472-8e07be3d9f81?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1718462670652-8db865f862bc?q=80&w=885&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     exampleOutputs: ['https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400'],
     stats: { maxDuration: '2.4 seconds', resolution: '576x320', rating: 3.9, launchYear: 2023 }
   },
