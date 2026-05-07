@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { useAppStore } from './store/useAppStore';
 import { categories, futurePredictions } from './data/mockData';
 import { CategoryFilter, AIVideoModel } from './types/models';
@@ -32,8 +31,7 @@ const getImpactBadgeColor = (impact: string) => {
 // ===========================================
 
 function Header() {
-  const { searchQuery, setSearchQuery, activeCategoryFilter, setCategoryFilter } = useAppStore();
-  
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass px-8 py-4 flex justify-between items-center transition-all duration-300">
       <a href="#" className="flex items-center gap-3 no-underline">
@@ -411,7 +409,7 @@ function ModelModal() {
 }
 
 function ModelsSection() {
-  const { getFilteredModels, searchQuery, activeCategoryFilter } = useAppStore();
+  const { getFilteredModels } = useAppStore();
   const filteredModels = getFilteredModels();
   
   return (
