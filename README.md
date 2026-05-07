@@ -8,6 +8,10 @@ VidForge is a modern React app for exploring AI video generation tools. It inclu
 - Tailwind-powered design system with reusable UI utilities/components
 - Aurora animated background section integrated into the app
 
+## Screenshot
+
+![VidForge Screenshot](public/vidfoge.png)
+
 ## Tech Stack
 
 - **Vite**
