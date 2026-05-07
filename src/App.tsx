@@ -483,7 +483,7 @@ function Footer() {
   return (
     <footer className="py-10 bg-gray-50 border-t border-gray-200 text-center">
       <p className="text-gray-500">
-        Built with <span className="text-indigo-600">♥</span> by VidForge • Showcasing the best in AI video generation
+        Built with <span className="text-indigo-600">♥</span> • Showcasing the best in AI video generation
       </p>
     </footer>
   );
